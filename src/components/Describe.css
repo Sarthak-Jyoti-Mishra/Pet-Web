@@ -1,0 +1,250 @@
+.describe {
+    display: flex;
+    margin-top: 0px;
+    height: 480px;
+    /* background-color: blue; */
+}
+.describe .leftSide, .describe .rightSide {
+    width: 60%;
+    padding-top: 41px;
+    padding-left: 87px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.describe .leftSide h2, .describe .rightSide h2 {
+    font-size: 50px;
+    width: 700px;
+}
+.describe .leftSide p, .describe .rightSide p {
+    margin-top: 30px;
+    font-size: 1.75rem;
+    width: 600px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.describe .leftSide button, .describe .rightSide button {
+    height: 60px;
+    width: 150px;
+    background-color: #fcc302;
+    border: 0px solid black;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.describe .leftSide button:active, .describe .rightSide button:active {
+    background-color: #fff;
+    border: 1px solid black;
+    color: black;
+}
+
+.describe .rightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.describe .rightSide img {
+    margin-top: 100px;
+    width: 400px;
+}
+
+.hdogImg {
+    position: absolute;
+    width: 500px;
+}
+
+.bvd {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    z-index: -1;
+    bottom: 220px;
+    right: 280px;
+    background-color: #fcc302;
+}
+
+.describe.reverse {
+    flex-direction: row-reverse;
+}
+
+.describe.reverse .rightSide {
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 100px;
+}
+
+.describe.reverse .leftSide {
+    text-align: right;
+}
+
+.describe.reverse .leftSide h2, p, button {
+    margin-right: 100px;
+}
+
+.describe.reverse .leftSide button {
+    margin-right: 200px;
+}
+
+.describe.reverse .leftSide p {
+    text-align: start;
+    width: 600px;
+}
+
+.describe.reverse .rightSide img {
+    margin-top: 1px;
+    width: 500px;
+}
+
+.describe.reverse .bvd {
+    top: 10px;
+    left: 150px; /* Adjust for reverse layout */
+}
+
+.video-container {
+    position: relative;
+    width: 100%; /* Make it responsive */
+    max-width: 600px; /* Set a max-width for larger screens */
+    height: auto; /* Adjust height to maintain aspect ratio */
+    margin: 0 auto; /* Center the video container */
+}
+.describe.reverse .rightSide .video-container {
+    position: relative;
+    top: 10px;
+    left: 150px; /* Adjust for reverse layout */
+}
+
+.describe.reverse .leftSide p  {
+    width: 500px;
+    margin-top: 30px;
+    text-align: right;
+    margin-left: 150px;
+}
+
+.video-container button {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 50%; /* Make the button circular */
+    width: 60px; /* Ensure the button is perfectly circular */
+    height: 60px;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tablet and small desktop screens (up to 1024px) */
+@media (max-width: 1024px) {
+    .describe{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        /* background-color: aqua; */
+    }
+    
+    .describe .leftSide, .describe .rightSide {
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+    }
+    .describe .leftSide h2, .describe .rightSide h2 {
+        font-size: 2rem;
+        width: 100%;
+    }
+    .describe .leftSide p, .describe .rightSide p {
+        width: 100%;
+        font-size: 1.25rem;
+    }
+    .describe .rightSide img {
+        width: 70%;
+        margin-top: 20px;
+    }
+    .describe.reverse{
+        display: none;
+    }
+}
+
+/* Smaller tablets and large smartphones (up to 768px) */
+@media (max-width: 768px) {
+    .describe{
+        /* background-color: chartreuse; */
+        width: 98%;
+    }
+    .describe .leftSide, .describe .rightSide {
+        width: 84.75%;
+        padding: 10px;
+    }
+    .describe .leftSide h2, .describe .rightSide h2 {
+        font-size: 1.75rem;
+    }
+    .describe .leftSide p, .describe .rightSide p {
+        font-size: 1rem;
+    }
+    .describe .rightSide img {
+        width: 80%;
+    }
+    .describe .leftSide button, .describe .rightSide button {
+        width: 200px;
+        font-size: 1.25rem;
+    }
+}
+
+/* Mobile screens (up to 600px) */
+@media (max-width: 600px) {
+    .describe {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        /* background-color: tomato; */
+    }
+    .describe .leftSide, .describe .rightSide {
+        width: auto;
+        padding: 10px;
+    }
+    .describe .leftSide h2, .describe .rightSide h2 {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .describe .leftSide p, .describe .rightSide p {
+        font-size: 1rem;
+        width: auto;
+    }
+    .describe .rightSide img {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 10px;
+    }
+    .describe .leftSide button, .describe .rightSide button {
+        width: 20%;
+        max-width: 200px;
+        font-size: 1rem;
+    }
+
+    .video-container button {
+        position: absolute;
+        top: 45%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        border: none;
+        border-radius: 50%; /* Make the button circular */
+        width: 60px; /* Ensure the button is perfectly circular */
+        height: 60px;
+        cursor: pointer;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

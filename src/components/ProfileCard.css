@@ -1,0 +1,242 @@
+.profilecard{
+    /* border: 1px solid black; */
+    width: 300px;
+    height: 40px;
+    /* background-color: aqua; */
+    margin-left: 50px;
+}
+.profilecard img{
+    width: 300px;
+    height: 250px;
+}
+.profilecard h2{
+    text-align: center;
+    color: #000;
+    margin-top: 10px;
+    font-family: Poppins;
+}
+.profilecard p{
+    text-align: center;
+    width: 300px;
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: Poppins;
+}
+.profilecard ul{
+    display: flex;
+    margin-top: 20px;
+    font-size: 25px;
+    margin-left: 40px;
+    gap: 30px;
+    list-style: none;
+}
+
+.profilecard ul a{
+   
+    color: #fff;
+}
+
+.profilecard li{
+    padding-left: 8px;
+    padding-top: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #daac00;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px){
+    .profilecard{
+        /* border: 1px solid black; */
+        width: 200px;
+        height: 300px;
+        position: relative;
+        left: 10px;
+        margin-left: 40px;
+        /* background-color: aqua; */
+    }
+    .profilecard img{
+        width: 200px;
+        height: 150px;
+        border-radius: 30%;
+    }
+    .profilecard h2{
+        text-align: center;
+        color: #000;
+        margin-top: 10px;
+        font-family: Poppins;
+    }
+    .profilecard p{
+        text-align: left;
+        width: 300px;
+        margin-left: 50px;
+        margin-top: 10px;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: Poppins;
+    }
+    .profilecard ul{
+        display: flex;
+        margin-top: 10px;
+        font-size: 25px;
+        margin-left: 10px;
+        gap: 10px;
+        list-style: none;
+    }
+    .profilecard ul a{
+        display: flex;
+        margin-top: 1px;
+        font-size: 25px;
+        margin-left: 1px;
+        gap: 10px;
+        list-style: none;
+        color: #fff;
+    }
+    .profilecard li{
+        padding-left: 8px;
+        padding-top: 5px;
+        width: 30px;
+        height: 30px;
+        background-color: #daac00;
+        border-radius: 50%;
+        cursor: pointer;
+        color: white;
+    }
+
+    .profilecard li:hover{
+        padding-left: 8px;
+        padding-top: 5px;
+        width: 30px;
+        height: 30px;
+        background-color: #daac00;
+        border-radius: 50%;
+        cursor: pointer;
+        color: black;
+    }
+}
+
+@media (max-width: 768px){
+    .profilecard{
+        /* border: 1px solid black; */
+        width: 200px;
+        height: 300px;
+        position: relative;
+        left: 10px;
+        margin-left: 40px;
+        /* background-color: aqua; */
+    }
+    .profilecard img{
+        width: 200px;
+        height: 150px;
+        border-radius: 30%;
+    }
+    .profilecard h2{
+        text-align: center;
+        color: #000;
+        margin-top: 10px;
+        font-family: Poppins;
+    }
+    .profilecard p{
+        text-align: left;
+        width: 300px;
+        margin-left: 50px;
+        margin-top: 10px;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: Poppins;
+    }
+    .profilecard ul{
+        display: flex;
+        margin-top: 10px;
+        font-size: 25px;
+        margin-left: 10px;
+        gap: 10px;
+        list-style: none;
+    }
+    .profilecard li{
+        padding-left: 8px;
+        padding-top: 5px;
+        width: 30px;
+        height: 30px;
+        background-color: #daac00;
+        border-radius: 50%;
+        cursor: pointer;
+        color: white;
+    }
+
+    .profilecard li:hover{
+        padding-left: 8px;
+        padding-top: 5px;
+        width: 30px;
+        height: 30px;
+        background-color: #daac00;
+        border-radius: 50%;
+        cursor: pointer;
+        color: black;
+    }
+    
+}
+
+@media (max-width: 600px){
+    .profilecard{
+        /* border: 1px solid black; */
+        width: 200px;
+        height: 300px;
+        position: relative;
+        left: 10px;
+        margin-left: 40px;
+        /* background-color: aqua; */
+    }
+    .profilecard img{
+        width: 200px;
+        height: 150px;
+        border-radius: 30%;
+    }
+    .profilecard h2{
+        text-align: center;
+        color: #000;
+        margin-top: 10px;
+        font-family: Poppins;
+    }
+    .profilecard p{
+        text-align: left;
+        width: 300px;
+        margin-left: 50px;
+        margin-top: 10px;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: Poppins;
+    }
+    .profilecard ul{
+        display: flex;
+        margin-top: 10px;
+        font-size: 25px;
+        margin-left: 10px;
+        gap: 10px;
+        list-style: none;
+    }
+    .profilecard li{
+        padding-left: 8px;
+        padding-top: 5px;
+        width: 30px;
+        height: 30px;
+        background-color: #daac00;
+        border-radius: 50%;
+        cursor: pointer;
+        color: white;
+    }
+
+    .profilecard li:hover{
+        padding-left: 8px;
+        padding-top: 5px;
+        width: 30px;
+        height: 30px;
+        background-color: #daac00;
+        border-radius: 50%;
+        cursor: pointer;
+        color: black;
+    }
+}

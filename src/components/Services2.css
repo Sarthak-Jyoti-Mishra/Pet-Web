@@ -1,0 +1,40 @@
+.services2{
+    height: 760px;
+}
+@media (max-width: 1024px) {
+    .services2{
+       display: none;
+    }
+    .services2 .service-card2{
+        position: relative;
+        right: 20px;
+        bottom: 80px;
+    }
+
+    
+}
+@media (max-width: 786px) {
+    .services2{
+       display: none;
+    }
+    .services2 .service-card2{
+        position: relative;
+        right: 20px;
+        bottom: 80px;
+    }
+
+    
+}
+
+@media (max-width: 600px) {
+    .services2{
+       display: none;
+    }
+    .services2 .service-card2{
+        position: relative;
+        right: 20px;
+        bottom: 80px;
+    }
+
+    
+}

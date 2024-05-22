@@ -1,0 +1,98 @@
+.vet-care-team {
+    background-color: #ffffff; 
+    color: hsl(0, 0%, 0%); 
+    padding: 50px 0; 
+    height: 600px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 20px;
+  }
+  
+  .section-heading {
+    font-size: 2rem; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    font-family: Poppins;
+  }
+  
+  .section-paragraph {
+    font-size: 1.2rem;
+    text-align: center; 
+    margin-bottom: 40px;
+    font-family: Poppins;
+  }
+  
+  .team-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  /* Styling for individual card components */
+  .doctor-card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    font-family: Poppins;
+  }
+  
+  .doctor-card .card-heading {
+    font-size: 1.5rem;
+  }
+  
+  .doctor-card .card-desc {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .doctor-card .social-links {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-link {
+    margin-right: 10px; 
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .social-link:hover {
+    text-decoration: underline;
+  }
+  
+
+  @media (max-width: 1024px){
+    .vet-care-team{
+      /* background-color: blue; */
+      width: 60%;
+      margin-left: 150px;
+      height: fit-content;
+      
+    }
+    .vet-care-team .container .section-heading{
+      font-size: 2rem;
+      margin-left: 10px;
+    }
+    .vet-care-team .container .section-paragraph{
+      font-size: 1rem;
+      text-align: center;
+      margin-left: -10%;
+      width: 500px;
+    }
+    
+  }
+  
+  @media (max-width: 768px){
+
+  }
+  
+  @media (max-width: 600px){
+      .team-cards{
+        display: flex;
+        flex-direction: column;      
+        padding-left: 120px;
+        gap: 50px;
+      }
+  }
